@@ -32,7 +32,7 @@ def takeover():
         for zone in available_devices:
             device.volume = volume
     else:
-        device = available_device[device]
+        device = available_devices[device]
         device.volume = 0
         device.play_uri(song)
         device.volume = volume
